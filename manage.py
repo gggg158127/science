@@ -3,7 +3,8 @@
 import os
 import sys
 
-# nihao
+
+# 这是测试
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'science.settings')
