@@ -1,0 +1,32 @@
+
+{% extends 'header.html' %}
+
+{% block content %}
+{% load static %}
+<div class="lflex-container">
+  <div class="lflex-item1">
+    <img class="img1" src="{% static 'img/medicine.jpg' %}" alt="">
+  </div>
+<!--左下盒子-->
+  {% for t in treatment %}
+  <div class="lflex-item2">
+
+
+      <div class="lflex-item21">
+        <img class="img1" src="{% static 'img/shire.jpg' %}" alt="">
+      </div>
+      <div class="lflex-item22">
+        <p1><b>类型：</b>{{ t.type }}</p1><br/>
+        <p1><b>推荐处方：</b>{{ t.recommend }}</p1><br/>
+        <p1><b>基础方剂：</b>{{ t.prescription }}</p1><br/>
+        <p1><b>服法：</b>{{ t.take }}</p1><br/>
+        <p1><b>推荐中成药：</b>{{ t.medicine }}</p1><br/>
+        <p1><b>针灸治疗推荐穴位：</b>{{ t.acupoint }}</p1><br/>
+          <p1><b>来源：</b>{{ t.source }}</p1><br/>
+      </div>
+  </div>
+{% endfor %}
+
+
+
+{% endblock %}

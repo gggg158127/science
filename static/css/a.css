@@ -1,0 +1,321 @@
+body{
+      font-family:"楷体";
+     background: url(/static/img/jingse.jpg) center center;
+
+}
+
+p {
+    text-align: center;
+    font-size: 17px;
+    color: cadetblue;
+    font-family: fantasy;
+}
+
+.p1{
+    font-size: 25px;
+    font-family:"楷体";
+}
+
+.button {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 1px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #f1f1f1;
+}
+
+
+#hr1 {
+
+    background-color: cadetblue;
+
+    height: 2px;
+
+    width: 75%;
+
+}
+
+ .test{
+            height: auto;
+            margin: 0 5px;
+        }
+
+
+.imgbox {
+
+    border-top: 5px solid cadetblue;
+
+
+
+    width: 60%;
+
+    height: 40%;
+
+    margin: 0 auto;
+
+}
+
+.img {
+
+    width: 100%;
+
+    height: 100%;
+
+    margin: 0 auto;
+
+    display: none;
+}
+
+.img1{
+    width: 100%;
+
+    height: 100%;
+    background-size:cover;
+    object-fit:cover; //这里面还有很多属性，感兴趣的可以一一去试试。
+
+}
+
+.fixed-nav {
+    position: fixed;
+    display: flex;
+    /* align-items: flex-end; */
+    /* justify-content: flex-end; */
+    top: 0;
+    left: 0;
+    width: 5%;
+    /* height: 50px; */
+    background-color: white;
+  }
+
+.photo{
+        float:left;
+        width:200px;
+        height:200px;
+    }
+
+.intro{
+        float:right;
+        width:70%;
+    }
+
+div1 {
+    display:inline-block;
+    min-height:200px;
+    padding:5px;
+    margin:0;
+}
+
+main {
+    width:700px;
+    margin:0;
+    text-align: center;
+}
+
+#main-m {
+    width:700px;
+    /*此处的宽度占比不取60%是因为，还得留些空间给内边距（Padding）和外边距（Margin）*/
+}
+
+
+
+/*首页盒子*/
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+     justify-content: center;
+    width: 1320px;
+    height: 3500px;
+    background: url(/static/img/jingse.jpg) center center;
+    flex-wrap: wrap;
+    margin:auto;
+}
+/*首页图片*/
+.flex-item1 {
+    background: url(/static/img/jingse.jpg) center center;
+    width: 1320px;
+    height:900px;
+    margin: 0px 0px;
+
+}
+
+/*下大盒子*/
+.flex-item2{
+     display: -webkit-flex;
+     display: flex;
+     -webkit-flex-direction: row-reverse;
+
+     height: 2000px;
+     background: url(/static/img/jingse.jpg) center center;
+     margin: 20px 50px 20px 50px;
+     flex-wrap:wrap;
+}
+
+/*论治盒子*/
+.lflex-container {
+    display: -webkit-flex;
+    display: flex;
+     -webkit-justify-content: center;
+    width: 1320px;
+    max-height: 2000px;
+    background: url(/static/img/jingse.jpg) center center;
+    flex-wrap: wrap;
+    margin:auto;
+}
+/*论治封面*/
+.lflex-item1 {
+    background: url(/static/img/jingse.jpg) center center;
+    width: 1320px;
+    height: 300px;
+    margin: auto;
+}
+/*论治内容盒子*/
+.lflex-item2{
+    background: url(/static/img/jingse.jpg) center center;
+    width: 370px;
+    height: 500px;
+    margin:20px 30px;
+    box-shadow: 0 0 40px #a0a0a0;
+}
+/*论治内容图片盒子*/
+.lflex-item21{
+     background: url(/static/img/jingse.jpg) center center;
+     width: 370px;
+     height: 200px;
+     margin:0px 0px;
+}
+/*论治内容文字盒子*/
+.lflex-item22{
+     background: url(/static/img/jingse.jpg) center center;
+     width: 360px;
+     height: 290px;
+     margin:5px 5px;
+}
+/*辩证内容盒子*/
+.bflex-item2{
+    background: url(/static/img/jingse.jpg) center center;
+    width: 370px;
+    height: 400px;
+    margin:20px 30px;
+    box-shadow: 0 0 40px #a0a0a0;
+}
+/*辩证内容图片盒子*/
+.bflex-item21{
+     background: url(/static/img/jingse.jpg) center center;
+     width: 370px;
+     height: 200px;
+     margin:0px 0px;
+}
+/*辩证内容文字盒子*/
+.bflex-item22{
+     background: url(/static/img/jingse.jpg) center center;
+     width: 360px;
+     height: 190px;
+     margin:5px 5px;
+}
+
+
+
+img2 {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+
+    height: 100%;
+    background-size:cover;
+    object-fit:cover; //这里面还有很多属性，感兴趣的可以一一去试试。
+}
+
+
+/*毒株介绍*/
+.dflex-container {
+     display: -webkit-flex;
+    display: flex;
+    width: 1320px;
+    height:1500px;
+    background: url(/static/img/jingse.jpg) center center;
+    flex-wrap: wrap;
+    margin:auto;
+}
+
+/*毒株封面*/
+.dflex-item1 {
+    background-color: red;
+    width: 1320px;
+    height: 300px;
+    margin:0px auto;
+
+}
+
+/*毒株内容盒子*/
+.dflex-item2{
+   display: -webkit-flex;
+    display: flex;
+    background: url(/static/img/jingse.jpg) center center;
+	max-width: 800px;
+    max-height: 1000px;
+    overflow: hidden;
+    margin: 0px auto 0;
+    box-shadow: 0 0 40px #a0a0a0;
+    font-family: 'Open Sans', sans-serif;
+    flex-wrap: wrap;
+}
+/*毒株图片*/
+.dflex-item22{
+     background: red;
+     width: 200px;
+     height: 200px;
+     margin:0px 0px;
+}
+/*毒株介绍*/
+.dflex-item23{
+     background: blue;
+     width: 500px;
+     height: 200px;
+     margin:0px 10px;
+}
+
+
+/*入侵过程*/
+.pflex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+     justify-content: center;
+    width: 1340px;
+    height: 600px;
+    background: url(/static/img/jingse.jpg) center center;
+    flex-wrap: wrap;
+    margin:0px;
+}
+/*小盒子*/
+.pflex-item1 {
+    background-color:red;
+    width: 320px;
+    height:550px;
+    margin: 0px 0px;
+
+}
+
+/*视频*/
+.pflex-item2{
+     display: -webkit-flex;
+     display: flex;
+     -webkit-flex-direction: row-reverse;
+     weight: 650px;
+     height:550px;
+     background: url(/static/img/jingse.jpg) center center;
+     margin:0px 0px 0px 0px;
+     flex-wrap:wrap;
+}
+
+

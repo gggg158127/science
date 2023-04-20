@@ -1,0 +1,56 @@
+
+{% extends 'header.html' %}
+
+{% block content %}
+{% load static %}
+
+<div class="lflex-container">
+  <div class="lflex-item1">
+    <img class="img1" src="{% static 'img/science.jpg' %}" alt="">
+  </div>
+<!--左下盒子-->
+ {% for t in treatment %}
+  <div class="bflex-item2">
+<!--     图片-->
+      <div class="bflex-item21">
+       <img class="img1" src="/{{t.bzimage}} " alt="">
+      </div>
+
+      <div class="bflex-item22">
+            <p1><b>适用范围：</b>{{ t.range }}</p1><br/>
+          <p1><b>类型：</b>{{ t.type }}</p1><br/>
+          <p1><b>临床表现：</b> {{ t.excerpt }}</p1><br/>
+          <p1><b>来源：</b>{{ t.source }}</p1><br/>
+
+      </div>
+
+
+  </div>
+   {% endfor %}
+
+
+<!--  <div class="bflex-item2">-->
+<!--      <div class="bflex-item21">-->
+<!--      <img class="img1" src="{% static 'img/02.png' %}" alt="">-->
+<!--      </div>-->
+<!--      <div class="bflex-item22">-->
+<!--        <p1><b>类型：</b>轻型</p1><br/>-->
+<!--          <p1><b>临床表现：</b>低热或不发热，微恶寒，乏力，头身困重，-->
+<!--肌肉酸痛，干咳痰少，咽痛，口干不欲多饮，或伴有胸闷脘-->
+<!--痞，无汗或汗出不畅，或见呕恶纳呆，便溏或大便粘滞不爽。-->
+<!--舌淡红，苔白厚腻或薄黄，脉滑数或濡</p1><br/>-->
+<!--          <p1><b>来源：</b>新型冠状病毒肺炎诊疗方案（试行第六版）</p1><br/>-->
+<!--      </div>-->
+<!--  </div>-->
+<!--  <div class="bflex-item2">-->
+<!--  </div>-->
+<!--  <div class="bflex-item2">-->
+<!--  </div>-->
+<!--  <div class="bflex-item2">-->
+<!--  </div>-->
+<!--  <div class="bflex-item2">-->
+<!--  </div>-->
+
+<!--</div>-->
+
+{% endblock %}
