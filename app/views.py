@@ -3,7 +3,7 @@ from .models import Treatment
 from django.middleware.csrf import get_token
 import pymysql
 
-
+# 执行搜索
 class E_search:
     def search(self, content):
         return self.excerpt_search(content)
@@ -51,15 +51,11 @@ def introduce(request):
 
 def search(request):
     if request.method == 'GET':
-        # print('this is get')
-        # treatment = Treatment.objects.all()
         dic = [{'type': '', 'excerpt': ''}]
         return render(request, 'search.html', context={'dic': dic})
     elif request.method == 'POST':
         csrf_token = get_token(request)  # 添加csrf_token用于post请求
         data = request.POST.get('title')
-        # print('this is post')
         a = E_search()
         rsp = a.excerpt_search(data)
-        # print(rsp)
         return render(request, 'search.html', context={'dic': rsp})
