@@ -17,6 +17,10 @@ from django.contrib import admin
 from django.urls import path
 from django.urls import include
 from app import views
+from django.conf.urls import url
+from django.views.static import serve
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.index),
@@ -28,4 +32,7 @@ urlpatterns = [
     path('introduce/view/', views.introduce),
     path('admin/', admin.site.urls),
     path('medicine/search/', views.search),
+    url(r'^article_img/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
 ]
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

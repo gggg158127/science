@@ -13,7 +13,7 @@ class E_search:
                                cursorclass=pymysql.cursors.DictCursor)
         cursor = conn.cursor()
         title = f'%{title}%'
-        str = 'select * from science.app_treatment where excerpt like %s'
+        str = 'select * from science.app_treatment where excerpt or bzimage like %s'
         cursor.execute(str, [title])
         response = cursor.fetchall()
         conn.close()
